@@ -1,11 +1,23 @@
-import { defineConfig } from "eslint/config";
-import next from "eslint-config-next";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-export default defineConfig([{
-    extends: [...next],
-}]);
+{
+  "name": "logistech-nexus",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "next": "^15.0.0",
+    "framer-motion": "^11.0.0",
+    "gsap": "^3.12.0",
+    "lucide-react": "^0.300.0",
+    "lenis": "^1.0.0",
+    "@react-three/fiber": "^8.0.0",
+    "@react-three/drei": "^9.0.0",
+    "three": "^0.160.0"
+  }
+}
